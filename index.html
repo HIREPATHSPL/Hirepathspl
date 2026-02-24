@@ -6,96 +6,63 @@
 <meta name="description" content="HirePath Services Pvt. Ltd. - Staffing, Skilling & Recruitment Company based in Bihar, India.">
 <title>HirePath Services Pvt. Ltd.</title>
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#f1f5f9;line-height:1.6}
-header{background:#111827;padding:40px 20px;text-align:center}
-header h1{margin:0;font-size:32px;color:#38bdf8}
-section{padding:50px 20px;max-width:1100px;margin:auto}
-h2{color:#38bdf8;margin-bottom:20px}
-.card{background:#1e293b;padding:25px;border-radius:10px;margin-bottom:20px}
-ul{padding-left:20px}
-footer{background:#111827;text-align:center;padding:20px;font-size:14px}
-.btn{display:inline-block;margin-top:15px;padding:10px 20px;background:#38bdf8;color:#0f172a;text-decoration:none;border-radius:5px;font-weight:bold;border:none;cursor:pointer}
-input,select,textarea{width:100%;padding:10px;margin:8px 0;border-radius:5px;border:none}
-iframe{width:100%;height:300px;border-radius:10px}
-.logo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center}
-.logo-grid img{max-width:140px;background:white;padding:10px;border-radius:8px}
+:root{--bg:#060b1b;--card:#111c34;--line:#233358;--text:#e2e8f0;--muted:#9fb3d8;--primary:#38bdf8;--accent:#14b8a6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 20% 20%,#132247 0%,var(--bg) 55%);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(6,11,27,.86);border-bottom:1px solid var(--line)}
+.nav-wrap{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.logo-chip{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;box-shadow:0 0 18px rgba(56,189,248,.35)}
+.tabs{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}.tabs a:hover{color:var(--primary)}
+header{max-width:1150px;margin:0 auto;padding:75px 20px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero-title{font-size:42px;line-height:1.15;margin:0 0 16px}.hero-title span{color:var(--primary)}.subtitle{color:var(--muted);margin:0 0 22px}
+.badges{display:flex;gap:10px;flex-wrap:wrap}.badges span{background:#162646;border:1px solid #244173;color:#b7d7ff;font-size:13px;padding:6px 12px;border-radius:999px}
+.logo-stage{min-height:320px;border:1px solid var(--line);background:linear-gradient(160deg,#0d1530,#0b1226);border-radius:22px;display:grid;place-items:center;position:relative;overflow:hidden}
+.logo-wrap{max-width:100%;padding:20px;border-radius:20px;background:rgba(255,255,255,.02);box-shadow:0 0 30px rgba(20,184,166,.22);animation:pulse 3s ease-in-out infinite}
+.logo-wrap img{max-width:100%;height:auto;display:block;filter:drop-shadow(0 0 18px rgba(56,189,248,.35))}
+.spark{position:absolute;width:8px;height:8px;border-radius:50%;background:#7dd3fc;opacity:.75;filter:blur(1px);animation:float 6s linear infinite}
+.spark:nth-child(1){top:20%;left:15%;animation-delay:1s}.spark:nth-child(2){top:70%;left:18%;animation-delay:2.3s}.spark:nth-child(3){top:15%;right:18%;animation-delay:3.2s}.spark:nth-child(4){bottom:15%;right:20%;animation-delay:4.1s}
+section{padding:30px 20px;max-width:1150px;margin:auto}h2{color:var(--primary);margin-bottom:18px}.card{background:var(--card);padding:24px;border:1px solid var(--line);border-radius:14px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}ul{margin:0;padding-left:20px}
+.btn{display:inline-block;margin-top:12px;padding:11px 20px;background:linear-gradient(135deg,var(--primary),#66d9ff);color:#041326;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
+input,textarea{width:100%;padding:11px 12px;margin:8px 0;border-radius:8px;border:1px solid #2d406d;background:#081022;color:var(--text)}input::placeholder,textarea::placeholder{color:#6f8cbe}
+iframe{width:100%;height:280px;border:0;border-radius:10px}
+.partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.partner-item{padding:15px;border:1px solid #324872;border-radius:10px;background:#0c1730;color:#bdd3fa;text-align:center;font-weight:600}
+footer{border-top:1px solid var(--line);margin-top:26px;background:#050a17;text-align:center;padding:22px 14px;color:#8fa4cf;font-size:14px}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes float{0%{transform:translateY(0);opacity:.2}40%{opacity:.85}100%{transform:translateY(-190px);opacity:0}}
+@media (max-width:900px){header{grid-template-columns:1fr;padding-top:45px}.hero-title{font-size:34px}.tabs{gap:12px;font-size:13px}.grid-2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<header>
-<h1>HirePath Services Pvt. Ltd.</h1>
-<p>"Path Towards Employability & Growth"</p>
-<p><strong>Staffing | Skilling | Recruitment | Project Implementation</strong></p>
+<div class="topbar"><div class="nav-wrap"><div class="brand"><div class="logo-chip">HP</div><b>HirePath</b></div><nav class="tabs"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#leadership">Leadership</a><a href="#jobs">Jobs</a><a href="#partners">Partners</a><a href="#contact">Contact</a></nav></div></div>
+<header id="home">
+  <div>
+    <h1 class="hero-title">HirePath Services <span>Pvt. Ltd.</span></h1>
+    <p class="subtitle">Path Towards Employability & Growth — staffing, skilling, recruitment and project implementation across Bihar and beyond.</p>
+    <div class="badges"><span>Staffing</span><span>Skilling</span><span>Recruitment</span><span>Govt. Projects</span></div>
+  </div>
+  <div class="logo-stage">
+    <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    <div class="logo-wrap">
+      <img alt="HirePath Services Pvt. Ltd. logo" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 620'>
+<rect width='900' height='620' fill='white'/>
+<circle cx='175' cy='90' r='34' fill='%23004376'/>
+<path d='M78 242c0-66 47-112 112-112h138l-62 69c-12 13-12 38 1 52 21 23 34 52 34 85v16h-44v-14c0-30-10-58-30-81l-39 96v94h-61l26-145v-133h-10c-35 0-64 29-64 64v9z' fill='%23004376'/>
+<text x='38' y='470' font-size='170' font-family='Arial, Helvetica, sans-serif' font-weight='700' fill='%23004376'>HirePath</text>
+<path d='M55 515c140-95 357-121 656-70-220-12-396 13-524 86z' fill='%2304a985'/>
+<path d='M252 517c31-27 74-51 132-69l28 3c-54 18-93 38-120 66z M344 465l40-14 20 2-40 13z M418 447l37-8 20 2-37 9z M488 439l34-3 20 2-35 4z' fill='white'/>
+<text x='123' y='590' font-size='68' letter-spacing='8' font-family='Arial, Helvetica, sans-serif' fill='%23004376'>SERVICES PVT. LTD.</text>
+</svg>"/>
+    </div>
+  </div>
 </header>
-
-<section>
-<h2>About Company</h2>
-<div class="card">
-<p>HirePath Services Pvt. Ltd. is a professionally managed organization based in Bihar, delivering services in Skill Development, Staffing, Recruitment and Government Project Implementation. We collaborate with reputed organizations and government bodies to provide structured training, employment linkage and workforce solutions across multiple sectors.</p>
-</div>
-</section>
-
-<section>
-<h2>Leadership</h2>
-<div class="card">
-<h3>Mr. Mukesh Kumar – Director</h3>
-<p>"Our vision is to create sustainable employment opportunities by empowering youth through skill development and industry-aligned training."</p>
-
-<h3>Mr. Manish Kumar – Co‑Director</h3>
-<p>"We focus on quality implementation, strong partnerships and transparent operations to build long-term impact in the skilling ecosystem."</p>
-</div>
-</section>
-
-<section>
-<h2>Current Job Openings</h2>
-<div class="card">
-<ul>
-<li><strong>Field Officer – Solar Project</strong></li>
-<li><strong>Healthcare Support Staff</strong></li>
-<li><strong>Computer Instructor</strong></li>
-</ul>
-</div>
-</section>
-
-<section>
-<h2>Apply for Job</h2>
-<div class="card">
-<form action="mailto:hirepathspl@gmail.com" method="post" enctype="text/plain">
-<input type="text" name="Name" placeholder="Full Name" required>
-<input type="tel" name="Phone" placeholder="Phone Number" required>
-<input type="text" name="Position" placeholder="Position Applied For" required>
-<textarea name="Message" rows="4" placeholder="Experience / Details"></textarea>
-<button class="btn" type="submit">Send Application</button>
-</form>
-<p>Applications will be received directly at: <strong>hirepathspl@gmail.com</strong></p>
-</div>
-</section>
-
-<section>
-<h2>Our Partners & Associations</h2>
-<div class="card logo-grid">
-<img src="d636e54a-5f5a-4c52-b407-0524ecb84d2d.png" alt="Shine Star International School">
-<img src="acfb0dde-5cd7-4920-81f8-c4e14f7d37f3.png" alt="DOSKEY Group">
-<img src="6c76c37a-5bd8-4dea-b9ca-9a51fd4f2f52.png" alt="HLFPPT">
-<img src="3b41c01f-4ce6-4daa-9011-fd5a5ffcb82b.png" alt="Bihar Skill Development Mission">
-<img src="7ccd67e5-fcaf-4b61-a76b-ffa48c891228.png" alt="PMKVY">
-</div>
-</section>
-
-<section>
-<h2>Our Location</h2>
-<div class="card">
-<iframe src="https://maps.google.com/maps?q=Khagaria%20Bihar&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-<p>Near Koshi College, In Front of Union Bank, Khagaria, Bihar</p>
-<p>Phone: +91-9060956891</p>
-<p>Email: hirepathspl@gmail.com</p>
-</div>
-</section>
-
-<footer>
-© 2026 HirePath Services Pvt. Ltd. | All Rights Reserved
-</footer>
-
-</body>
-</html>
+<section id="about"><h2>About Company</h2><div class="card"><p>HirePath Services Pvt. Ltd. is a professionally managed organization based in Bihar, delivering services in Skill Development, Staffing, Recruitment and Government Project Implementation. We collaborate with reputed organizations and government bodies to provide structured training, employment linkage and workforce solutions across multiple sectors.</p></div></section>
+<section id="services"><h2>Service Highlights</h2><div class="grid-2"><div class="card"><h3>Skilling Programs</h3><p>Industry-ready training with practical modules, assessments and placement support.</p></div><div class="card"><h3>Recruitment & Staffing</h3><p>Verified talent pipelines for field, technical, healthcare and education roles.</p></div></div></section>
+<section id="leadership"><h2>Leadership</h2><div class="card"><h3>Mr. Mukesh Kumar – Director</h3><p>"Our vision is to create sustainable employment opportunities by empowering youth through skill development and industry-aligned training."</p><h3>Mr. Manish Kumar – Co‑Director</h3><p>"We focus on quality implementation, strong partnerships and transparent operations to build long-term impact in the skilling ecosystem."</p></div></section>
+<section id="jobs"><h2>Current Job Openings</h2><div class="card"><ul><li><strong>Field Officer – Solar Project</strong></li><li><strong>Healthcare Support Staff</strong></li><li><strong>Computer Instructor</strong></li></ul></div></section>
+<section id="partners"><h2>Our Partners & Associations</h2><div class="partner-grid"><div class="partner-item">Shine Star International School</div><div class="partner-item">DOSKEY Group</div><div class="partner-item">HLFPPT</div><div class="partner-item">Bihar Skill Development Mission</div><div class="partner-item">PMKVY</div></div></section>
+<section id="contact"><h2>Apply for Job / Contact</h2><div class="grid-2"><div class="card"><form action="mailto:hirepathspl@gmail.com" method="post" enctype="text/plain"><input type="text" name="Name" placeholder="Full Name" required><input type="tel" name="Phone" placeholder="Phone Number" required><input type="text" name="Position" placeholder="Position Applied For" required><textarea name="Message" rows="4" placeholder="Experience / Details"></textarea><button class="btn" type="submit">Send Application</button></form><p>Applications: <strong>hirepathspl@gmail.com</strong></p></div><div class="card"><iframe src="https://maps.google.com/maps?q=Khagaria%20Bihar&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><p>Near Koshi College, In Front of Union Bank, Khagaria, Bihar</p><p>Phone: +91-9060956891</p></div></div></section>
+<footer>© 2026 HirePath Services Pvt. Ltd. | All Rights Reserved</footer>
+</body></html>
